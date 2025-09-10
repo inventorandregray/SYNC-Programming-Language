@@ -1,35 +1,39 @@
-# SYNC 
+# BlackBerry OS 5 Multimedia Suite (Java ME)
 
-**SYNC** is a polyphonic tone and sequence playback system designed with microprocessor-level simulation in mind, originally built for the NEC V30HL CPU used in the IBM Simon.  
-The project showcases Andre Gray’s 1994 programming style with modular C structures and clear inline documentation.
-
----
-
-##  Features of SYNC
-
-### 1. Polyphony & Sequence Handling
-- Plays up to **8 tones simultaneously**  
-- Handles sequences up to **256 notes**  
-- Supports **looping** (including infinite loops)  
-
-### 2. EQ Adjustments
-- **Bass** and **Treble** adjustments applied per tone  
-
-### 3. Microprocessor-Level Simulation
-- `hwBeep()` represents direct DAC/speaker control for the **NEC V30HL CPU** used in IBM Simon  
-- Real implementation would toggle speaker pins using **I/O ports** or **timer interrupts**  
-
-### 4. Tempo Control
-- Playback speed adjustment (**50–200% of original duration**)  
-
-### 5. Andre Gray’s 1994 Programming Style
-- Simple **C structures**  
-- Clear, modular functions  
-- Extensive **inline comments** documenting functionality  
-
-### 6. Open Source Release
-- Free to **use, modify, and distribute**  
+A fully functional multimedia suite for **BlackBerry OS 5**, written in **Java ME**, providing a native experience with audio, video, and image playback.
 
 ---
 
-© Andre Gray 1994
+##  Features Implemented
+
+### 1. Image Slideshow
+- Next / Previous buttons  
+- Loads images from project resources (`.png` or `.bmp`)
+
+### 2. Audio Playlist
+- Play current audio file  
+- Move to next audio track  
+
+### 3. Video Playlist
+- Play current video file (`.3gp` preferred)  
+- Move to next video track  
+
+### 4. UI Controls
+- Fully native using `ButtonField` and `BitmapField`  
+- Alerts for error handling using `Dialog.alert()`  
+
+### 5. Resource Management
+- Stops and closes media players to avoid memory leaks  
+- Keeps UI responsive  
+
+---
+
+##  Notes on OS 5 Compatibility
+- Video must be small (**<100 KB**) for smooth playback  
+- Audio files should be short (**<2–3 MB**) to prevent memory issues  
+- No background multitasking for media; all playback happens in the same thread  
+- Touch support is minimal on OS 5 devices; buttons mainly work with **trackball/keyboard**  
+
+---
+
+© Andre Gray 2009
