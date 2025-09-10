@@ -1,11 +1,11 @@
-# SYNC 🎵
+# SYNC 
 
 **SYNC** is a polyphonic tone and sequence playback system designed with microprocessor-level simulation in mind, originally built for the NEC V30HL CPU used in the IBM Simon.  
 The project showcases Andre Gray’s 1994 programming style with modular C structures and clear inline documentation.
 
 ---
 
-## ✨ Features of SYNC
+##  Features of SYNC
 
 ### 1. Polyphony & Sequence Handling
 - Plays up to **8 tones simultaneously**  
